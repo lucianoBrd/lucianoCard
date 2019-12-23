@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Color(0xfff5f5f5),
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 100.0,
@@ -35,31 +36,32 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
-              Container(
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Color(0xff00adb5),
+                ),
+              ),
+              Card(
                 color: Color(0xff414141),
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Color(0xfff5f5f5),
+                  ),
+                  title: Text(
+                    'contact@lucien-brd.com',
+                    style: TextStyle(
                       color: Color(0xfff5f5f5),
+                      fontFamily: 'Poppins',
+                      fontSize: 20.0,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'contact@lucien-brd.com',
-                      style: TextStyle(
-                        color: Color(0xfff5f5f5),
-                        fontFamily: 'Poppins',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
