@@ -35,6 +35,33 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
+              Container(
+                color: Color(0xff414141),
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.email,
+                      color: Color(0xfff5f5f5),
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      'contact@lucien-brd.com',
+                      style: TextStyle(
+                        color: Color(0xfff5f5f5),
+                        fontFamily: 'Poppins',
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
