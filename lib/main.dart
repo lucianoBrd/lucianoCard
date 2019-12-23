@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Color(0xfff5f5f5),
         body: SafeArea(
           child: Column(
             children: <Widget>[
@@ -21,7 +21,18 @@ class MyApp extends StatelessWidget {
               Text(
                 'Lucien Burdet',
                 style: TextStyle(
-
+                  color: Color(0xff414141),
+                  fontFamily: 'Asem',
+                  fontSize: 50.0,
+                ),
+              ),
+              Text(
+                'DEVELOPPEUR',
+                style: TextStyle(
+                  color: Color(0xff414141),
+                  fontFamily: 'Poppins',
+                  fontSize: 20.0,
+                  letterSpacing: 2.5,
                 ),
               ),
             ],
